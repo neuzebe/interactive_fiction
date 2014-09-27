@@ -66,3 +66,15 @@ div.menu
     padding-top: 25px;
     text-align: center;
 }
+
+.death
+{
+    background-color: grey;
+    color: white;
+}
+
+.success
+{
+    background-color: green;
+    color: white;
+}
