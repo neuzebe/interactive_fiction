@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!---------
+Source: index.html
+Author: Noel Euzebe 300709334
+Last Modified By: Noel Euzebe
+Date Last Modified: Sept 26, 2014; 
+
+Revision History
+Created : Sept 25, 2014
+Updated : Sept 26, 2014; 
+---------->
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Interactive Fiction</title>
+        <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        
+        <div id="impress">
+            <div id="1" class="step slide">
+                <div class="slide-text">
+                    <p>Cave Entry.</p>
+                    <p><a href="#2.1">GO LEFT</a></p>
+                    <p><a href="#2.2">GO RIGHT</a></p>
+                </div>
+            </div>  
+            
+           <!-- second level --> 
+            <div id="2.1" class="step slide" data-x="1500">
+                <div class="slide-text">
+                    <p>Rock Face. Rope hanging.</p>
+                    <p><a href="#3.1">Climb</a></p>
+                    <p><a href="#3.2">Walk around the ledge</a></p>
+                </div>
+            </div>
+            <div id="2.2" class="step slide" data-x="3000">
+                <div class="slide-text">
+                    <p>You have reached the inner chamber of the cave.</p>
+                    <p>The way ahead forks into two paths: a well-lit path and a dark lonely path, with distinct footprints heading into it.</p>                    
+                    <p><a href="#3.3">TAKE LIT PATH</a></p>
+                    <p><a href="#3.4">TAKE DARK PATH</a></p>                    
+                </div>               
+            </div>
+            
+           <!-- third level -->
+            <div id="3.1" class="step slide" data-x="4500">
+                <div class="slide-text">
+                    <p>The rope is frayed!</p>
+                    <p>You fall to your death.</p>                               
+                </div>
+                <div class="menu"><a href="#1">START OVER</a></div>  
+            </div>  
+            <div id="3.2" class="step slide" data-x="6000">
+                <div class="slide-text">
+                    <p>On the other side of the ledge you see two items; a rusty sword and a large, mysterious glowing stone.</p>
+                    <p>You can only choose one before continuing.</p>                    
+                    <p><a href="#4.1">TAKE THE SWORD</a></p>
+                    <p><a href="#4.2">TAKE THE GLOWING STONE</a></p>                    
+                </div>               
+            </div>  
+           
+            <div id="3.3" class="step slide" data-x="7500">
+                <div class="slide-text">
+                    <p>The path leads you to the water's edge. The other bank is too far away to swim; you must choose a means across.</p>
+                    <p><a href="#4.3">TAKE THE BOAT</a></p>
+                    <p><a href="#4.4">WALK ACROSS THE BRIDGE</a></p>                    
+                </div>
+            </div>  
+            <div id="3.4" class="step slide" data-x="9000">
+                <div class="slide-text">
+                    <p>Follow the music or the whispers.</p>                                      
+                    <p><a href="#4.5">FOLLOW THE EERIE MUSIC</a></p>
+                    <p><a href="#4.6">FOLLOW THE HARSH WHISPERS</a></p>                    
+                </div>               
+            </div>             
+            
+                                    
+            
+            <!-- fourth level -->
+            <div id="4.1" class="step slide" data-x="10500">
+                <div class="slide-text">
+                    <p>You choose the sword.</p>
+                    <p>
+                        Your next step proves to be fatal; you slip and impale yourself on your newly acquired weapon.
+                    </p>                                        
+                </div>
+                 <div class="menu"><a href="#1">START OVER</a></div>
+            </div>     
+            <div id="4.2" class="step slide" data-x="12000">
+                <div class="slide-text">
+                    <p>You choose the glowing stone.</p>
+                    <p>It proves to be a bad decision; with your next step, the additional weight of the stone topples you over the ledge.</p>                    
+                </div>
+                 <div class="menu"><a href="#1">START OVER</a></div>
+            </div>      
+            <div id="4.3" class="step slide" data-x="13500">
+                <div class="slide-text">
+                    <p>The boat isn't quite as sturdy as you imagined.</p>
+                    <p>It capsizes, and you find out just how deep the water is; too deep.</p>                    
+                </div>
+                 <div class="menu"><a href="#1">START OVER</a></div>
+            </div>       
+            <div id="4.4" class="step slide" data-x="15000">
+                <div class="slide-text">
+                    <p>The bridge.. A generous name for what amounts to be poorly arranged wood and rope.</p>
+                    <p>You find no solace at the bottom of the deep water below, with fish as your eternal company.</p>                    
+                </div>
+                 <div class="menu"><a href="#1">START OVER</a></div>
+            </div>    
+            <div id="4.5" class="step slide" data-x="16500">
+                <div class="slide-text">
+                    <p>You find the gramaphone as the source of the eerie music, with a massive dog in corner, mesmerised by its tune</p>
+                    <p><a href="#5.1">TURN IT OFF</a></p>
+                    <p><a href="#5.2">DANCE TO THE TUNE</a></p>
+                </div>
+            </div>    
+            <div id="4.6" class="step slide" data-x="18000">
+                <div class="slide-text">
+                    <p>This room has a pot of gold and a chest of emerald gems, but given their weight, you can only carry one.</p>
+                    <p><a href="#5.3">GRAB THE GOLD</a></p>
+                    <p><a href="#5.4">PINCH THE GEMS</a></p>
+                </div>
+            </div>                
+           
+            <!-- fifth level -->
+
+            <div id="5.1" class="step slide" data-x="19500">
+                <div class="slide-text">
+                    <p>The music stops, and the dog is no longer mesmerised.</p>
+                    <p>This spells bad for you as you are now the focus of his attention.</p>
+                    <p>By attention, this means deadly teeth and claws ripping your neck out as the dogs leaps from its perch.</p>
+                </div>
+                <div class="menu"><a href="#1">START OVER</a></div>
+            </div>            
+
+            <div id="5.2" class="step slide" data-x="21000">
+                <div class="slide-text">
+                    <p>Your footwork is nimble, your footwork is quick.</p>
+                    <p>Your footwork isn't perfect and so you slipped.</p>
+                    <p>You trigger a deadly trap, and your gramaphone solo ends with arrows piercing your heart.</p>
+                </div>
+                <div class="menu"><a href="#1">START OVER</a></div>
+            </div>      
+            
+            <div id="5.3" class="step slide" data-x="22500">
+                <div class="slide-text">
+                    <p>You grab the gold and start to head out but....</p>
+                    <p>The leprechauns come back for their gold and they're not believers of "Finders Keepers".</p>
+                    <p>Your story ends here, and the feet of several greedy and bloodthirsty green-clad .</p>
+                </div>
+                <div class="menu"><a href="#1">START OVER</a></div>
+            </div>       
+            
+            <div id="5.4" class="step slide" data-x="24000">
+                <div class="slide-text">
+                    <p>The bag of gems slung over your shoulder, you make your way for the exit.</p>
+                    <p>You look back and ponder upon all the opportunities to die a gruesome death that you avoided as you step outside into the sunlight.</p>
+                    <p>All's well that ends well. CONGRATULATIONS</p>
+                </div>
+                <div class="menu"><a href="#1">START OVER</a></div>
+            </div>             
+            
+            
+        </div>
+        <script src="js/impress.js"></script>
+        <script>impress().init();</script>
+    </body>
+</html>
+    
